@@ -7,10 +7,6 @@ connectDB();
 
 app.use(express.json({ extended: false }));
 
-app.get("/", (req, res) => {
-  res.json({ msg: "Welcome to the contacts keeper API!" });
-});
-
 // Defining routes
 app.use("/api/contacts", require("./routes/contacts"));
 app.use("/api/auth", require("./routes/auth"));
