@@ -38,6 +38,7 @@ const Login = props => {
         email,
         password
       });
+      clearErrors();
     }
   };
   return (
